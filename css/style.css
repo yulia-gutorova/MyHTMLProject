@@ -1,0 +1,665 @@
+/*-------------------------------------------------------------
+*************************   MAIN PROPERTIES  ***************************
+--------------------------------------------------------------*/
+
+body{
+    margin: 0px;
+    padding-top:100px;
+}
+#main_container{
+    width: 100%;
+}
+
+h1{
+    font-family: werdana;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+} 
+
+ 
+h2{
+    font-family: werdana;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    text-align: left;
+    margin-left: 10px;
+    line-height: 22px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+} 
+
+.article{
+    width: 80%; 
+    margin: auto;
+ }
+
+ .article p{
+    font-family: werdana;
+    font-weight: light;
+    font-size: 17px;
+    text-align: left;
+    letter-spacing: 0.4px;
+    line-height: 22px;
+    margin-left: 10px;
+}
+
+ hr{
+    border: none;
+    border-top: 5px rgb(95, 241, 95) solid;
+    width: 500px;
+}
+
+/*-------------------------------------------------------------
+*************************   HEADER  ***************************
+--------------------------------------------------------------*/
+ #header{
+    position: fixed; 
+    z-index: 1;
+    background-color:rgb(188, 185, 185);
+    height: 100px; 
+    width: 100%;        
+    top:0; 
+    left:0;            
+ }
+
+ #nav_title{           
+    background-color: rgb(250, 186, 244);
+    height: 40px;
+    font-size: 30px;
+    font-family: werdana;
+    font-weight: bold;
+    text-align: center;           
+ }
+
+ #nav_menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60%;
+ }
+
+ #logo{
+    display: inline-block; 
+    align-items:center; 
+    vertical-align: middle; 
+    margin-left: 50px;
+ }
+ #logo span{
+    font-size: 20px; 
+    font-weight: bold;
+ }
+ #logo img{
+    width:50px; 
+    height: auto; 
+    margin: 0px 10px;
+ }
+
+ .nav_menu ul li{
+    display: inline-block;
+    padding-left: 10px; 
+    padding-right: 10px; 
+    font-size: 20px;
+ }
+
+
+.button{
+    position: relative;
+}
+
+.submenu1{
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.button:hover .submenu1 {
+    display: block;
+}
+
+
+
+
+
+
+
+ .nav_menu ul li.dropdown_menu{
+    display: none;
+ }
+
+ .nav_menu ul li a{
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+ }
+
+ .nav_menu ul li a:hover{
+    background-color: rgb(95, 93, 93);
+    color: white;
+ }
+
+
+
+/*-------------------------------------------------------------
+*************************   HERO SECTION  ***************************
+--------------------------------------------------------------*/
+ #hero{
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+    background-color: lightskyblue;
+    height: 300px;
+    width: 100%;           
+ }
+ #hero .container{
+    background-color: lightskyblue;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+ }
+ #hero_text{
+    position: relative;
+    max-height: 100%;
+    width: 95%;
+ }
+ #hero .container #hero_image img{
+    width:auto;
+    max-height:100%;
+    border-radius: 145px 0 0 145px;
+ }
+ .relative_hero_text{
+    font-family: werdana; 
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: normal; 
+    line-height: 50px; 
+    margin-top: 50px;
+    margin-left: 10px;
+ }
+
+ /*-------------------------------------------------------------
+*************************   SECTION WHY **********************
+--------------------------------------------------------------*/
+.absolute_hero_text{
+    display:none;
+ }
+
+.article ol{
+    line-height: 25px;
+    font-size: 17px;
+    margin-bottom:80px ;
+} 
+
+#why_aside{
+    background-color: rgb(177, 249, 242);
+    width: 30%;
+    float: right;
+    font-style: italic;
+    margin-left: 20px;
+} 
+
+#why_aside div{
+    padding:0 10px ;
+}
+
+
+ /*-------------------------------------------------------------
+*************************   SECTION BOOKS **********************
+--------------------------------------------------------------*/
+
+.all_courses {
+    margin-bottom: 100px;
+}
+
+.book_conteiner{
+    /* background-color: rgb(252, 245, 251); */
+    height: 200px;
+    width: 70%;
+    margin-left: 30%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+article.book h2{
+    margin-left: 25%;
+}
+
+.books{
+    height: 100%;
+    width: auto;
+    padding-right: 10px;
+}
+
+.book_desc{
+    align-items: center;
+    display: flex;
+    justify-content: center; 
+}
+
+
+
+
+.books_aside{
+    background-color: rgb(177, 249, 242);
+    width: 20%;
+    float: left;
+    font-style: italic;
+    margin-right: 20px;
+
+} 
+
+
+.books_aside h3{
+    text-align: center;
+}
+
+
+.books_aside div{
+    width: 80%;
+    margin: auto;
+}
+
+.books_aside ul{
+    font-family: werdana ;
+    font-style: normal; 
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;  
+}
+
+.books_aside ul li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.books_aside ul li a:hover{
+    background-color: lightskyblue;
+    color: white;
+}
+
+ /*-------------------------------------------------------------
+*************************  SECTION COURSES **********************
+--------------------------------------------------------------*/
+.courses{
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 60px;  
+}
+
+.all_courses .container{
+    width: 80%;
+    margin: 50px auto 20px auto;
+    /* background-color: bisque; */
+ }
+
+.course{
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 18%;
+    text-align: center;
+    margin: 0 8px;
+    padding: 20px;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+
+.course_picture img{
+    width: 100%;
+    height: auto;
+ }
+
+
+button.go_to_course{
+    background-color: lightskyblue;
+    font-family: werdana;
+    font-weight: bold;
+    font-size: 12px;
+    height: 30px;
+    max-width: 150px;
+    line-height: 20px;
+    border-radius: 220px;
+    border: none;
+    text-transform: uppercase;
+}
+
+button.go_to_course:hover{
+    background-color: rgb(39, 167, 247);
+}
+
+/*-------------------------------------------------------------
+*************************   QUESTIONARY  **********************
+--------------------------------------------------------------*/
+.questionary div{
+    /* background-color: rgb(245, 190, 190); */
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.questionary div h2{
+    text-align: center;
+}
+
+.questionary form{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+
+
+.ques_title{
+    color: #fff;
+    background-color: lightskyblue;
+    font-family: werdana;
+    font-size: 20px;
+    width: 200px;
+    height: 80px;
+    padding: 5px 0;
+    vertical-align: middle;
+    text-align: center;
+}
+.res_title{
+    color: #fff;
+    text-align: center;
+    background-color: lightskyblue;
+    font-family: werdana;
+    font-size: 20px;
+    height: 80px;
+    width: 200px;
+    padding: 5px 0;
+    vertical-align: middle;
+}
+.article2{
+    width: 70%;
+}
+
+
+
+/*-------------------------------------------------------------
+*************************   NEWSLETTER  ***************************
+--------------------------------------------------------------*/
+
+section.newsletter div{
+    background-color: rgb(250, 186, 244);
+    max-height: 200px;
+    max-width: 400px;
+    text-align: center;
+    padding: 10px 0px;
+    margin: 30px auto;
+}
+
+section.newsletter h3{
+    font-family: werdana;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+section.newsletter p{
+    font-family: werdana;
+    font-size: 15px;
+    font-weight: light;
+    line-height: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+section.newsletter form{   
+    display: flex;
+    justify-content: center;
+}
+
+section.newsletter form input{
+    font-family: werdana;
+    font-size: 15px;
+    font-weight: light;
+    max-width: 300px;
+    height: 30px;
+    max-width: 80%;
+    padding-left: 10px;
+    border-radius: 60px 0 0 60px;
+    border: 1px solid lightgray
+}
+
+section.newsletter form button{
+    font-family: werdana;
+    font-size: 15px;
+    font-weight: light;
+    background-color: lightskyblue;
+    width: 500px;
+    height: 30x;
+    max-width: 20%;
+    border-radius: 0 170px 170px 0;
+    border: none;
+    color: black
+}
+
+section.newsletter form button:hover{
+    background-color: rgb(39, 167, 247);
+}
+
+/*-------------------------------------------------------------
+*************************   FOOTER  ***************************
+--------------------------------------------------------------*/
+footer{
+    background-color:gray; 
+    width: 100%;
+}
+
+#contact_me nav{
+    display: flex; 
+    justify-content: space-around;
+}
+#contact_me nav ul{
+    list-style: none; 
+    text-decoration: none;
+}
+#contact_me nav ul li{
+    height: 30px;
+}
+#contact_me nav ul li.follow_title{
+    color:white;
+    font-weight: bold;
+    height: 40px; 
+    font-size: 20px;
+}  
+#contact_me nav ul li a{
+    color: lightgrey; 
+    text-decoration: none;
+}
+footer div.rights{
+    background-color: rgb(67, 67, 67);
+    line-height: 40px;
+    color: white;
+    text-align: center;
+    font-weight: normal;
+}
+
+/*-------------------------------------------------------------
+*************************   MEDIA QUERIES  ***************************
+--------------------------------------------------------------*/
+/* Normal desktops*/
+@media screen and (max-width: 1880px)
+{
+    #main_container{
+        /* background-color: coral; */
+        opacity: 80%;
+    }
+
+    #why_aside p{
+        font-family: werdana;
+        font-weight: light;
+        font-size: 16px;
+        text-align: left;
+        letter-spacing: 0.4px;
+        line-height: 20px;
+        margin-left: 10px;
+    } 
+    #hero_text ul{
+        margin-top: 8px;
+     }
+   }
+
+/* Small desktops*/
+@media screen and (max-width: 1140px)
+{
+    #main_container{
+        background-color: skyblue; 
+        opacity: 80%;
+    }
+    #why_aside{       
+        width: 80%;
+        float:inherit;
+        font-style: italic;
+        margin:auto;
+    } 
+    .relative_hero_text{
+        font-size: 28px;
+        line-height: 34px; 
+        margin-top: 10px;
+        margin-left: 5px;
+     }
+}
+
+/*-------------------------------------------------------------
+*************************   TABLETS  ***************************
+--------------------------------------------------------------*/  
+@media screen and (max-width: 960px)
+{
+    #main_container{
+        background-color: green; 
+        opacity: 80%;
+    }
+    .relative_hero_text{
+        display: none;
+     }
+     .absolute_hero_text{
+        display:block;
+        background-color: lightskyblue;
+        font-family: werdana; 
+        color: aliceblue;
+        font-size: 20px;
+        font-weight: normal; 
+        line-height: 30px; 
+        margin-top: 10px;
+        margin:auto
+     }
+
+    .nav_menu ul li.main_menu{
+        display: none;
+    }
+
+    .nav_menu ul li.dropdown_menu{
+        display: inline-block;
+        position: relative;
+        margin-right: 40px;
+    }
+    
+    .submenu{
+        display: none;
+        position: absolute;
+        top: 37px;
+        left: -50px;
+        background-color:rgb(188, 185, 185);
+        min-width: 200px;
+        height: 150px;
+        z-index: 1;
+        margin: auto;
+        padding-bottom: 15px;
+    }
+    
+    .dropdown_menu:hover .submenu {
+        display: block;
+    }
+
+    .content li {
+        padding-bottom: 10px;
+    }
+
+    .content li a{
+        font-family: werdana;
+        font-size: 15px;
+    }
+
+
+    .books_aside{       
+        width: 50%;
+        float:inherit;
+        margin:auto;
+    } 
+
+    .book_conteiner{
+        display: block;
+        max-height: 300px; 
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+    
+    .books{
+        float: left;
+        height: 70%;
+        width: auto;
+    }
+
+    button.go_to_course{
+        height: 50px;
+}
+
+
+/* Mobiles*/
+@media screen and (max-width: 576px)
+{
+    #main_container{
+        background-color: yellow; 
+        opacity: 80%;
+    }
+
+    .container
+    {
+      /* background-color: rgb(112, 245, 112); */
+      /* max-width: 92%; */
+      /* opacity: 80%; */
+      /* margin:auto; */
+    }
+
+    .book_conteiner{
+        display: block;
+        background-color: rgb(225, 207, 241);
+        max-height: 400px; 
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .books{
+        float: left;
+        height: 50%;
+        width: auto;
+    }
+    
+    .courses{
+        display: block;
+        /* justify-content: space-between;    */
+    }
+
+    .course{
+        width: 80%;
+    }
+
+    button.go_to_course{
+        height: 30px; 
+    }
+}
+
