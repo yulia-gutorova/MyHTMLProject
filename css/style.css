@@ -49,6 +49,7 @@ h2{
     border: none;
     border-top: 5px rgb(95, 241, 95) solid;
     width: 500px;
+    margin-bottom: 100px;
 }
 
 /*-------------------------------------------------------------
@@ -286,17 +287,17 @@ article.book h2{
  /*-------------------------------------------------------------
 *************************  SECTION COURSES **********************
 --------------------------------------------------------------*/
+.all_courses .container{
+    width: 80%;
+    margin: 50px auto 0px auto;
+    /* background-color: bisque; */
+ }
+
 .courses{
     display: flex;
     justify-content: space-between; 
-    margin-bottom: 60px;  
+    margin-bottom: 20px;  
 }
-
-.all_courses .container{
-    width: 80%;
-    margin: 50px auto 20px auto;
-    /* background-color: bisque; */
- }
 
 .course{
     border: 1px solid black;
@@ -317,7 +318,7 @@ article.book h2{
  }
 
 
-button.go_to_course{
+button.go_to_course, button.submit_form{
     background-color: lightskyblue;
     font-family: werdana;
     font-weight: bold;
@@ -330,55 +331,92 @@ button.go_to_course{
     text-transform: uppercase;
 }
 
-button.go_to_course:hover{
+button.go_to_course:hover,
+button.submit_form:hover{
     background-color: rgb(39, 167, 247);
 }
 
 /*-------------------------------------------------------------
-*************************   QUESTIONARY  **********************
+*************************   QUESTIONNARY  **********************
 --------------------------------------------------------------*/
-.questionary div{
+.questionnary .container{
     /* background-color: rgb(245, 190, 190); */
-    margin-top: 30px;
-    margin-bottom: 30px;
+    width: 80%;
+    /* background-color: bisque; */
+    margin:  30px auto 50px auto;
 }
 
-.questionary div h2{
-    text-align: center;
-}
-
-.questionary form{
+.questionnary .questionnary_flex{
     display: flex;
-    width: 30%;
-    justify-content: space-between;
+    justify-content: space-between; 
+    height:330px;
 }
 
+.questionnary_flex .form{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: violet; */
+    width: 55%;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.questionnary_flex .form form{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    /* background-color: rgb(26, 1, 26); */
+    font-family: werdana;
+    flex-direction: column;
+}
+
+.fieldset{
+    border: none;
+}
+
+.desc{
+    /* background-color: rgb(241, 21, 241); */
+    border: 1px solid black;
+    border-radius: 8px;
+    text-align: center;
+    width: 40%;
+}
 
 .ques_title{
     color: #fff;
     background-color: lightskyblue;
-    font-family: werdana;
     font-size: 20px;
-    width: 200px;
-    height: 80px;
+    width: 180px;
+    height: 85px;
     padding: 5px 0;
     vertical-align: middle;
     text-align: center;
 }
-.res_title{
-    color: #fff;
+
+div.checkboxes input, div.radiobuttons input{
+    margin: 6px;
+}
+
+div.submit_button{
     text-align: center;
+}
+
+button.submit_form{
     background-color: lightskyblue;
     font-family: werdana;
-    font-size: 20px;
-    height: 80px;
-    width: 200px;
-    padding: 5px 0;
-    vertical-align: middle;
+    font-weight: bold;
+    font-size: 12px;
+    height: 30px;
+    max-width: 100px;
+    line-height: 20px;
+    border-radius: 220px;
+    border: none;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    margin-top: 20px auto;
+
 }
-.article2{
-    width: 70%;
-}
+
 
 
 
