@@ -30,6 +30,19 @@ h2{
     padding-bottom: 10px;
 } 
 
+h3{
+    font-family: werdana;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0.4px;
+    text-align: left;
+    margin-left: 10px;
+    line-height: 22px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}   
+
+
 .article{
     width: 80%; 
     margin: auto;
@@ -435,20 +448,11 @@ section.newsletter > div{
 }
 
 section.newsletter h3{
-    font-family: werdana;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 30px;
     text-align: center;
+    margin: 0 auto;
 }
 
-section.newsletter p{
-    font-family: werdana;
-    font-size: 15px;
-    font-weight: light;
-    line-height: 20px;
-    margin-top: 0;
-    margin-bottom: 10px;
+section.newsletter h2{
     text-align: center;
 }
 
@@ -458,16 +462,31 @@ div.form_content{
     background-color: rgb(129, 129, 242);
 }
 
-div.form_content div{
+div.form_content > div{
     width: 45%;
     margin: 20px 10px 10px 20px;
 }
 
-section.newsletter  input{
+section.newsletter input[type="text"]
+{
     width: 50%;
     margin: 10px 0;
-    padding: 11px;
+    padding: 10px 5px;
 }
+
+#country{
+    width: 53.5%;
+    margin: 10px 0;
+    padding: 10px 5px;
+}
+
+section.newsletter .newsletter_radio{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: auto;
+}
+
 
 /* section.newsletter form input{
     font-family: werdana;

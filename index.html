@@ -313,16 +313,42 @@
     <section class="newsletter">
         <hr>
         <div>
-            <h3>Register here to get newsletters!</h3>
-            <p>Subscribe now and don't miss a single deal!</p>
+            <h1>Register here to get newsletters!</h1>
+            <h2>Subscribe now and don't miss a single deal!</h2>
             <form action=""> 
                 <div class="form_content">
                     <div style="background-color:aquamarine ;">
+
+                        <h3>Name</h3>
                         <label for="firstname">First name:</label>
-                        <input type="text" id="firstname" name="firstname" placeholder="First name"><br>
+                        <input type="text" id="firstname" name="firstname" placeholder="First name" required><br>
                         <label for="lastname">Last name:</label>
-                        <input type="text" id="lastname" name="lastname" placeholder="Last name">
+                        <input type="text" id="lastname" name="lastname" placeholder="Last name" required><br>
                         
+                        <label for="country">Country:&nbsp; &nbsp;</label>
+                        <select name="country" id="country">
+                            <option value="">Sweden</option> 
+                            <option value="">Danmark</option> 
+                            <option value="">Finland</option> 
+                            <option value="">Norway</option>   
+                        </select>
+
+                        <h3>Gender</h3>
+                        <div class="newsletter_radio" >
+                            <div>
+                                <input id="male" type="radio" name="gender">
+                                <label for="male">Male</label>
+                            </div>  
+                            <div>
+                                <input id="female" type="radio" name="gender">
+                                <label for="female">Female</label>
+                            </div>
+                            <div>
+                                <input id="other" type="radio" name="gender">
+                                <label for="other">Other</label>                       
+                            </div>
+                        </div>
+
                     </div>
                     <div style="background-color:bisque ;">
                         second section
@@ -332,8 +358,7 @@
                 <!-- <input type="email" name="email" placeholder="Your email...">-->
 
                 <div class="submit_button">
-                    <button class="submit_form">Submit</button> 
-                    
+                    <button class="submit_form">Register</button>    
                 </div>
             </form>
 
