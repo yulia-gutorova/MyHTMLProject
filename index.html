@@ -28,8 +28,8 @@
                                 href="" onclick="window.open('images/myFoto.jpg','targetWindow', 'width=880px, height=550px');
                                 return false; ">Photo</a></li>   -->  
                             <li class="main_menu"><a href="#hero_image">Why CSS&HTML</a></li>                     
-                            <li class="main_menu"><a href="#books">Books</a></li>
-                            <li class="main_menu"><a href="#courses">Courses</a></li>                    
+                            <li class="main_menu"><a href="#books_hr">Books</a></li>
+                            <li class="main_menu"><a href="#courses_hr">Courses</a></li>                    
                             <!-- <li><a href="javascript:alert('Database administrator\nMath teacher')">Community</a></li> -->
                             <li class="button main_menu"><a href="">Questionnaries</a>                           
 <!--                                 <div class="submenu1">
@@ -128,7 +128,7 @@
             <div class="container">
                 <article  class="article book">
 
-                    <hr>
+                    <hr id="books_hr">
                     <h1 id="books">Top 5 HTML/CSS Books for Beginners</h1> 
 
                     <aside class="books_aside">
@@ -194,8 +194,11 @@
 
         <section class="all_courses">
             <div class="container">
-                <hr>
+
+                <hr id="courses_hr">
+
                 <h1>Best HTML & CSS Courses</h1>
+
                 <div id="courses" class="courses">
                     <div class="course">
                         <div class="course_picture">
@@ -252,58 +255,88 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="questionary">
-            <div>
-                <hr>               
-                <div style="display: flex;
-                            margin: auto;
-                            justify-content: space-between;
-                            width: 80%;">   
-                                          
-                    <form>                              
-                        <fieldset class="fieldset">
-                            <legend class="ques_title">What is your favourite<br>language for web development?</legend>
-                            <div>
-                                <label><input  type="radio" name="favourite_language" value="HTML"> HTML</label><br>
-                                <label><input  type="radio" name="favourite_language" value="CSS"> CSS</label><br>
-                                <label><input  type="radio" name="favourite_language" value="SQL"> SQL</label><br>
-                                <label><input  type="radio" name="favourite_language" value="JavaScript"> JavaScript</label><br>
-                                <label><input  type="radio" name="favourite_language" value="Java" checked> Java</label><br>
+        <section class="questionnary">
+            <div class="container">
+                <hr id="questionnary_hr"> 
+                <h1>Please, Answer Some Questions</h1>
+
+                <div class="questionnary_flex"> 
+
+                    <div class="form">
+                        <form action="">
+                            <fieldset class="fieldset">
+                                <legend class="ques_title">What is your favourite<br>language for web development?</legend>
+                                <div class="radiobuttons">
+                                    <label><input  type="radio" name="favourite_language" value="HTML"> HTML</label><br>
+                                    <label><input  type="radio" name="favourite_language" value="CSS"> CSS</label><br>
+                                    <label><input  type="radio" name="favourite_language" value="SQL"> SQL</label><br>
+                                    <label><input  type="radio" name="favourite_language" value="JavaScript"> JavaScript</label><br>
+                                    <label><input  type="radio" name="favourite_language" value="Java" checked> Java</label><br>
+                                </div>
+                                
+                            </fieldset>
+                            <div class="submit_button">
+                                <button class="submit_form">Submit</button>                        
                             </div>
-                        </fieldset>
-                        <fieldset class="fieldset">
-                            <legend class="ques_title">What programming<br>languages can you?</legend>
-                            <div>
-                                <input  id="Java"       type="checkbox" name="can_lanuages" value="Java" checked> <label for="Java"> Java</label><br>
-                                <input  id="JavaScript" type="checkbox" name="can_lanuages" value="JavaScript"> <label for="JavaScript"> JavaScript</label> <br>
-                                <input  id="HTML"       type="checkbox" name="can_lanuages" value="HTML"> <label for="HTML"> HTML</label><br>
-                                <input  id="CSS"        type="checkbox" name="can_lanuages" value="CSS"> <label for="CSS"> CSS</label><br>
-                                <input  id="SQL"        type="checkbox" name="can_lanuages" value="SQL"> <label for="SQL"> SQL</label><br>
+                        </form>
+                        <form action="">
+                            <fieldset class="fieldset">
+                                <legend class="ques_title">What programming<br>languages can you?</legend>
+                                <div class="checkboxes">
+                                    <input  id="Java"       type="checkbox" name="can_lanuages" value="Java" checked> <label for="Java"> Java</label><br>
+                                    <input  id="JavaScript" type="checkbox" name="can_lanuages" value="JavaScript"> <label for="JavaScript"> JavaScript</label><br> 
+                                    <input  id="HTML"       type="checkbox" name="can_lanuages" value="HTML"> <label for="HTML"> HTML</label><br>
+                                    <input  id="CSS"        type="checkbox" name="can_lanuages" value="CSS"> <label for="CSS"> CSS</label><br>
+                                    <input  id="SQL"        type="checkbox" name="can_lanuages" value="SQL"> <label for="SQL"> SQL</label><br>
+                                </div>
+                                
+                            </fieldset> 
+                            <div class="submit_button">
+                                <button class="submit_form">Submit</button>                        
                             </div>
-                        </fieldset>
-                    </form>
-                    <article class="article2">
-                        <p>
-                            Do you know which programming languages are preferred by developers worldwide?
-                            Choosing the best programming language for your web development project is a critical task. An excellent choice facilitates rapid project development and helps your development team integrate essential features with lesser efforts.  
-    
-                            While there are many different programming languages, the most common ones used in web development are JavaScript, HTML, CSS, PHP, etc. JavaScript has a popularity of nearly 65% among developers worldwide, as per Statista.
-                        </p>
-                    </article>
+                        </form>
+                    </div>                      
+
+                    <div class="desc">
+                        <article class="questionnary_desc">
+                            <p>
+                           Here previous results should be shown 
+                            </p>
+                        </article>
+                    </div>
+
                 </div>
             </div>
-        </section> -->
+        </section>
     </main>
 
     <section class="newsletter">
         <hr>
         <div>
-            <h3>Newsletter signup</h3>
+            <h3>Register here to get newsletters!</h3>
             <p>Subscribe now and don't miss a single deal!</p>
-            <form>
-                <input type="email" name="email" placeholder="Your email...">
-                <button>Subscribe</button>
+            <form action=""> 
+                <div class="form_content">
+                    <div style="background-color:aquamarine ;">
+                        <label for="firstname">First name:</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="First name"><br>
+                        <label for="lastname">Last name:</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Last name">
+                        
+                    </div>
+                    <div style="background-color:bisque ;">
+                        second section
+                    </div>
+                </div>              
+
+                <!-- <input type="email" name="email" placeholder="Your email...">-->
+
+                <div class="submit_button">
+                    <button class="submit_form">Submit</button> 
+                    
+                </div>
             </form>
+
         </div>   
     </section> 
 
