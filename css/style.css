@@ -399,6 +399,7 @@ div.checkboxes input, div.radiobuttons input{
 
 div.submit_button{
     text-align: center;
+    margin-bottom: 20px;
 }
 
 button.submit_form{
@@ -424,12 +425,12 @@ button.submit_form{
 *************************   NEWSLETTER  ***************************
 --------------------------------------------------------------*/
 
-section.newsletter div{
+section.newsletter > div{
     background-color: rgb(250, 186, 244);
-    max-height: 200px;
-    max-width: 400px;
-    text-align: center;
-    padding: 10px 0px;
+    max-height: 600px;
+    max-width: 80%;
+/*     text-align: center;
+    padding: 10px 0px; */
     margin: 30px auto;
 }
 
@@ -438,6 +439,7 @@ section.newsletter h3{
     font-size: 24px;
     font-weight: bold;
     line-height: 30px;
+    text-align: center;
 }
 
 section.newsletter p{
@@ -447,14 +449,27 @@ section.newsletter p{
     line-height: 20px;
     margin-top: 0;
     margin-bottom: 10px;
+    text-align: center;
 }
 
-section.newsletter form{   
+div.form_content{   
     display: flex;
-    justify-content: center;
+    justify-content:space-between; 
+    background-color: rgb(129, 129, 242);
 }
 
-section.newsletter form input{
+div.form_content div{
+    width: 45%;
+    margin: 20px 10px 10px 20px;
+}
+
+section.newsletter  input{
+     width: 50%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+/* section.newsletter form input{
     font-family: werdana;
     font-size: 15px;
     font-weight: light;
@@ -464,10 +479,10 @@ section.newsletter form input{
     padding-left: 10px;
     border-radius: 60px 0 0 60px;
     border: 1px solid lightgray
-}
+} */
 
 section.newsletter form button{
-    font-family: werdana;
+/*     font-family: werdana;
     font-size: 15px;
     font-weight: light;
     background-color: lightskyblue;
@@ -476,7 +491,8 @@ section.newsletter form button{
     max-width: 20%;
     border-radius: 0 170px 170px 0;
     border: none;
-    color: black
+    color: black */
+    margin: 20px auto;
 }
 
 section.newsletter form button:hover{
@@ -696,3 +712,4 @@ footer div.rights{
     }
 }
 
+}
