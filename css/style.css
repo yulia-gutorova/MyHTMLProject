@@ -437,7 +437,9 @@ button.submit_form{
 /*-------------------------------------------------------------
 *************************   NEWSLETTER  ***************************
 --------------------------------------------------------------*/
-
+*{
+    font-family: werdana;
+}
 section.newsletter > div{
     background-color: rgb(250, 186, 244);
     max-height: 600px;
@@ -459,7 +461,7 @@ section.newsletter h2{
 div.form_content{   
     display: flex;
     justify-content:space-between; 
-    background-color: rgb(129, 129, 242);
+    /* background-color: rgb(129, 129, 242); */
 }
 
 div.form_content > div{
@@ -467,7 +469,9 @@ div.form_content > div{
     margin: 20px 10px 10px 20px;
 }
 
-section.newsletter input[type="text"]
+section.newsletter input[type="text"],
+input[type="email"],
+input[type="number"]
 {
     width: 50%;
     margin: 10px 0;
@@ -475,7 +479,7 @@ section.newsletter input[type="text"]
 }
 
 #country{
-    width: 53.5%;
+    width: 52%;
     margin: 10px 0;
     padding: 10px 5px;
 }
