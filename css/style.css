@@ -10,8 +10,12 @@ body{
     width: 100%;
 }
 
-h1{
+*{
     font-family: werdana;
+}
+
+h1{
+
     font-weight: bold;
     font-size: 30px;
     text-align: center;
@@ -19,7 +23,7 @@ h1{
 
  
 h2{
-    font-family: werdana;
+
     font-weight: bold;
     font-size: 20px;
     letter-spacing: 0.4px;
@@ -31,7 +35,7 @@ h2{
 } 
 
 h3{
-    font-family: werdana;
+
     font-weight: bold;
     font-size: 20px;
     letter-spacing: 0.4px;
@@ -49,7 +53,6 @@ h3{
  }
 
  .article p{
-    font-family: werdana;
     font-weight: light;
     font-size: 17px;
     text-align: left;
@@ -345,8 +348,9 @@ button.go_to_course, button.submit_form{
 }
 
 button.go_to_course:hover,
-button.submit_form:hover{
-    background-color: rgb(39, 167, 247);
+button.submit_form:hover,
+button.show_previous_results:hover{
+    background-color: rgb(19, 161, 249);
 }
 
 /*-------------------------------------------------------------
@@ -361,17 +365,23 @@ button.submit_form:hover{
 
 .questionnary .questionnary_flex{
     display: flex;
-    justify-content: space-between; 
-    height:330px;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    /* justify-content: space-between;  */
+    /* height:330px; */
+    background-color: rgb(227, 225, 225);
 }
 
 .questionnary_flex .form{
     display: flex;
     justify-content: space-between;
     /* background-color: violet; */
-    width: 55%;
-    border: 1px solid black;
+    width: 100%;
+/*     border: 1px solid black;
     border-radius: 8px;
+    margin-bottom: 20px; */
 }
 
 .questionnary_flex .form form{
@@ -386,20 +396,21 @@ button.submit_form:hover{
 .fieldset{
     border: none;
 }
-
+/* 
 .desc{
-    /* background-color: rgb(241, 21, 241); */
+    background-color: rgb(241, 21, 241); 
     border: 1px solid black;
     border-radius: 8px;
     text-align: center;
     width: 40%;
 }
+ */
 
 .ques_title{
     color: #fff;
     background-color: lightskyblue;
     font-size: 20px;
-    width: 180px;
+    width: 230px;
     height: 85px;
     padding: 5px 0;
     vertical-align: middle;
@@ -431,18 +442,32 @@ button.submit_form{
 
 }
 
+.show_previous_results{
+    background-color: lightskyblue;
+    font-family: werdana;
+    font-weight: bold;
+    font-size: 12px;
+    height: 30px;
+    max-width: 200px;
+    line-height: 20px;
+    border-radius: 220px;
+    border: none;
+    text-transform: uppercase;
+}
 
+.show_previous_results a{
+    text-decoration: none;
+    color:black
+}
 
 
 /*-------------------------------------------------------------
 *************************   NEWSLETTER  ***************************
 --------------------------------------------------------------*/
-*{
-    font-family: werdana;
-}
+
 section.newsletter > div{
     background-color: rgb(250, 186, 244);
-    max-height: 600px;
+    /* max-height: 600px; */
     max-width: 80%;
 /*     text-align: center;
     padding: 10px 0px; */
@@ -467,6 +492,11 @@ div.form_content{
 div.form_content > div{
     width: 45%;
     margin: 20px 10px 10px 20px;
+}
+div.form_content .input_label{
+    font-family: werdana ;
+    display:inline-block; 
+    width: 110px;
 }
 
 section.newsletter input[type="text"],
@@ -558,6 +588,8 @@ footer div.rights{
     text-align: center;
     font-weight: normal;
 }
+
+
 
 /*-------------------------------------------------------------
 *************************   MEDIA QUERIES  ***************************
@@ -687,7 +719,21 @@ footer div.rights{
     }
 
     button.go_to_course{
-        height: 50px;
+        height: 50px;}
+
+
+    .questionnary .questionnary_flex{
+        display: block;
+        /* height:330px; */
+    }
+
+
+
+    .questionnary_flex .form{
+        display: block;
+        }
+
+
 }
 
 
@@ -733,6 +779,19 @@ footer div.rights{
     button.go_to_course{
         height: 30px; 
     }
-}
 
+    hr{
+        width: 400px;
+    }
+
+
+    div.form_content{   
+        display: block;
+        /* background-color: rgb(129, 129, 242); */
+    }
+
+    div.form_content > div{
+        width: 80%;
+
+}
 }

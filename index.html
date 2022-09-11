@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyOwnHTML</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media_queries.css">
 </head>
 
 <body>
@@ -31,7 +32,7 @@
                             <li class="main_menu"><a href="#books_hr">Books</a></li>
                             <li class="main_menu"><a href="#courses_hr">Courses</a></li>                    
                             <!-- <li><a href="javascript:alert('Database administrator\nMath teacher')">Community</a></li> -->
-                            <li class="button main_menu"><a href="">Questionnaries</a>                           
+                            <li class="button main_menu"><a href="#questionnary_hr">Questionnaries</a>                           
 <!--                                 <div class="submenu1">
                                     <ul class="dropdown_content1">
                                         <li><a href="">Why CSS&HTML</a></li>
@@ -51,7 +52,7 @@
                                         <li><a href="#hero_image">Why CSS&HTML</a></li>
                                         <li><a href="#books">Books</a></li>
                                         <li><a href="#courses">Courses</a></li>
-                                        <li><a href="">Questionnaries</a></li>
+                                        <li><a href="#questionnary_hr">Questionnaries</a></li>
                                         <li><a href="#contact_me">Contact me</a></li>
                                     </ul>
                                 </div>                           
@@ -265,6 +266,22 @@
                     <div class="form">
                         <form action="">
                             <fieldset class="fieldset">
+                                <legend class="ques_title">What is the most common<br>language for web development?</legend>
+                                <div class="radiobuttons">
+                                    <label><input  type="radio" name="favourite_language" value="HTML"> HTML</label><br>
+                                    <label><input  type="radio" name="favourite_language" value="CSS"> CSS</label><br>
+                                    <label><input  type="radio" name="favourite_language" value="SQL"> SQL</label><br>
+                                    <label><input  type="radio" name="favourite_language" value="JavaScript"> JavaScript</label><br>
+                                    <label><input  type="radio" name="favourite_language" value="Java" checked> Java</label><br>
+                                </div>
+                                
+                            </fieldset>
+                            <div class="submit_button">
+                                <button class="submit_form">Submit</button>                        
+                            </div>
+                        </form>
+                        <form action="">
+                            <fieldset class="fieldset">
                                 <legend class="ques_title">What is your favourite<br>language for web development?</legend>
                                 <div class="radiobuttons">
                                     <label><input  type="radio" name="favourite_language" value="HTML"> HTML</label><br>
@@ -295,15 +312,21 @@
                                 <button class="submit_form">Submit</button>                        
                             </div>
                         </form>
-                    </div>                      
+                    </div>  
+                    <div class="submit_button">
+                        <button class="show_previous_results">
+                            <a href="javascript:alert('Here previous results should be shown')">Show previous results</a>
+                        </button>                        
+                    </div>  
 
+<!-- 
                     <div class="desc">
                         <article class="questionnary_desc">
                             <p>
                            Here previous results should be shown 
                             </p>
                         </article>
-                    </div>
+                    </div> -->
 
                 </div>
             </div>
@@ -320,12 +343,12 @@
                     <div>
 
                         <h3>Name</h3>
-                        <label for="firstname">First name:</label>
+                        <label for="firstname"><span class="input_label">First name:</span></label>
                         <input type="text" id="firstname" name="firstname" placeholder="First name" required><br>
-                        <label for="lastname">Last name:</label>
+                        <label for="lastname"><span class="input_label">Last name:</span></label>
                         <input type="text" id="lastname" name="lastname" placeholder="Last name" required><br>
                         
-                        <label for="country">Country:&nbsp; &nbsp;</label>
+                        <label for="country"><span class="input_label">Country:</span></label>
                         <select name="country" id="country">
                             <option value="">Sweden</option> 
                             <option value="">Danmark</option> 
@@ -335,10 +358,10 @@
 
                     </div>
                     <div>
-                        <h3>Additional infirmation</h3>
-                        <label for="tel_number">Phone number:</label>
+                        <h3>Additional information</h3>
+                        <label for="tel_number"><span class="input_label">Phone number:</span></label>
                         <input type="number" id="tel_number" name="tel_number" placeholder="0763150456"><br>
-                        <label for="email">Email:&emsp;&emsp;&emsp;&nbsp;&nbsp;</label>
+                        <label for="email"><span class="input_label">Email:</span></label>
                         <input type="email" id="email" name="email" placeholder="fo@bar.com" required><br>
                         <h3>Gender</h3>
                         <div class="newsletter_radio" >

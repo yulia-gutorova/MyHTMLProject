@@ -1,0 +1,204 @@
+/*-------------------------------------------------------------
+*************************   MEDIA QUERIES  ***************************
+--------------------------------------------------------------*/
+/* Normal desktops*/
+@media screen and (max-width: 1880px)
+{
+    #main_container{
+        /* background-color: coral; */
+        opacity: 80%;
+    }
+
+    #why_aside p{
+        font-family: werdana;
+        font-weight: light;
+        font-size: 16px;
+        text-align: left;
+        letter-spacing: 0.4px;
+        line-height: 20px;
+        margin-left: 10px;
+    } 
+    #hero_text ul{
+        margin-top: 8px;
+     }
+   }
+
+/* Small desktops*/
+@media screen and (max-width: 1140px)
+{
+    #main_container{
+        background-color: skyblue; 
+        opacity: 80%;
+    }
+    #why_aside{       
+        width: 80%;
+        float:inherit;
+        font-style: italic;
+        margin:auto;
+    } 
+    .relative_hero_text{
+        font-size: 28px;
+        line-height: 34px; 
+        margin-top: 10px;
+        margin-left: 5px;
+     }
+}
+
+/*-------------------------------------------------------------
+*************************   TABLETS  ***************************
+--------------------------------------------------------------*/  
+@media screen and (max-width: 960px)
+{
+    #main_container{
+        background-color: green; 
+        opacity: 80%;
+    }
+    .relative_hero_text{
+        display: none;
+     }
+     .absolute_hero_text{
+        display:block;
+        background-color: lightskyblue;
+        font-family: werdana; 
+        color: aliceblue;
+        font-size: 20px;
+        font-weight: normal; 
+        line-height: 30px; 
+        margin-top: 10px;
+        margin:auto
+     }
+
+    .nav_menu ul li.main_menu{
+        display: none;
+    }
+
+    .nav_menu ul li.dropdown_menu{
+        display: inline-block;
+        position: relative;
+        margin-right: 40px;
+    }
+    
+    .submenu{
+        display: none;
+        position: absolute;
+        top: 37px;
+        left: -50px;
+        background-color:rgb(188, 185, 185);
+        min-width: 200px;
+        height: 150px;
+        z-index: 1;
+        margin: auto;
+        padding-bottom: 15px;
+    }
+    
+    .dropdown_menu:hover .submenu {
+        display: block;
+    }
+
+    .content li {
+        padding-bottom: 10px;
+    }
+
+    .content li a{
+        font-family: werdana;
+        font-size: 15px;
+    }
+
+
+    .books_aside{       
+        width: 50%;
+        float:inherit;
+        margin:auto;
+    } 
+
+    .book_conteiner{
+        display: block;
+        max-height: 300px; 
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+    
+    .books{
+        float: left;
+        height: 70%;
+        width: auto;
+    }
+
+    button.go_to_course{
+        height: 50px;}
+
+
+    .questionnary .questionnary_flex{
+        display: block;
+        /* height:330px; */
+    }
+
+
+
+    .questionnary_flex .form{
+        display: block;
+        }
+
+
+}
+
+
+/* Mobiles*/
+@media screen and (max-width: 576px)
+{
+    #main_container{
+        background-color: yellow; 
+        opacity: 80%;
+    }
+
+    .container
+    {
+      /* background-color: rgb(112, 245, 112); */
+      /* max-width: 92%; */
+      /* opacity: 80%; */
+      /* margin:auto; */
+    }
+
+    .book_conteiner{
+        display: block;
+        background-color: rgb(225, 207, 241);
+        max-height: 400px; 
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .books{
+        float: left;
+        height: 50%;
+        width: auto;
+    }
+    
+    .courses{
+        display: block;
+        /* justify-content: space-between;    */
+    }
+
+    .course{
+        width: 80%;
+    }
+
+    button.go_to_course{
+        height: 30px; 
+    }
+
+    hr{
+        width: 400px;
+    }
+
+
+    div.form_content{   
+        display: block;
+        /* background-color: rgb(129, 129, 242); */
+    }
+
+    div.form_content > div{
+        width: 80%;
+
+}
+}
