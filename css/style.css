@@ -1,99 +1,29 @@
-/*-------------------------------------------------------------
-*************************   MAIN PROPERTIES  ***************************
---------------------------------------------------------------*/
-
-body{
-    margin: 0px;
-    padding-top:100px;
-}
-#main_container{
-    width: 100%;
-}
-
-*{
-    font-family: werdana;
-}
-
-h1{
-
-    font-weight: bold;
-    font-size: 30px;
-    text-align: center;
-} 
-
- 
-h2{
-
-    font-weight: bold;
-    font-size: 20px;
-    letter-spacing: 0.4px;
-    text-align: left;
-    margin-left: 10px;
-    line-height: 22px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-} 
-
-h3{
-
-    font-weight: bold;
-    font-size: 20px;
-    letter-spacing: 0.4px;
-    text-align: left;
-    margin-left: 10px;
-    line-height: 22px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-}   
-
-
-.article{
-    width: 80%; 
-    margin: auto;
- }
-
- .article p{
-    font-weight: light;
-    font-size: 17px;
-    text-align: left;
-    letter-spacing: 0.4px;
-    line-height: 22px;
-    margin-left: 10px;
-}
-
- hr{
-    border: none;
-    border-top: 5px rgb(95, 241, 95) solid;
-    width: 500px;
-    margin-bottom: 100px;
-}
 
 /*-------------------------------------------------------------
 *************************   HEADER  ***************************
 --------------------------------------------------------------*/
- #header{
-    position: fixed; 
-    z-index: 1;
+#header{
     background-color:rgb(188, 185, 185);
+    position: fixed; 
+    z-index: 1;   
     height: 100px; 
     width: 100%;        
     top:0; 
     left:0;            
- }
+}
 
- #nav_title{           
+#nav_title{           
     background-color: rgb(250, 186, 244);
-    height: 40px;
     font-size: 30px;
-    font-family: werdana;
+    height: 40px;
     font-weight: bold;
     text-align: center;           
- }
+}
 
  #nav_menu{
     display: flex;
+    justify-content: space-between;   
     align-items: center;
-    justify-content: space-between;
     height: 60%;
  }
 
@@ -104,7 +34,7 @@ h3{
     margin-left: 50px;
  }
  #logo span{
-    font-size: 20px; 
+    font-size: 15px; 
     font-weight: bold;
  }
  #logo img{
@@ -115,34 +45,32 @@ h3{
 
  .nav_menu ul li{
     display: inline-block;
+    font-size: 15px;
     padding-left: 10px; 
     padding-right: 10px; 
-    font-size: 20px;
  }
 
+/* .submenu{
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 0;
+    min-width: 160px;
+    padding: 12px 16px;
+} */
 
 .button{
     position: relative;
-}
+} 
 
-.submenu1{
-    display: none;
-    position: absolute;
-    top: 20px;
-    left: 0;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-}
-
-.button:hover .submenu1 {
+/* .button:hover .submenu1 {
     display: block;
-}
+} */
 
-
- .nav_menu ul li.dropdown_menu{
+.nav_menu ul li.dropdown_menu{
     display: none;
  }
 
@@ -187,8 +115,7 @@ h3{
     max-height:100%;
     border-radius: 145px 0 0 145px;
  }
- .relative_hero_text{
-    font-family: werdana; 
+ .relative_hero_text{ 
     color: aliceblue;
     font-size: 30px;
     font-weight: normal; 
@@ -258,8 +185,6 @@ article.book h2{
 }
 
 
-
-
 .books_aside{
     background-color: rgb(177, 249, 242);
     width: 20%;
@@ -268,7 +193,6 @@ article.book h2{
     margin-right: 20px;
 
 } 
-
 
 .books_aside h3{
     text-align: center;
@@ -281,7 +205,6 @@ article.book h2{
 }
 
 .books_aside ul{
-    font-family: werdana ;
     font-style: normal; 
     list-style-type: none; 
     margin: 0;
@@ -328,6 +251,10 @@ article.book h2{
     justify-content: space-between;
  }
 
+ .course_info .course_name{
+    font-size: 15px;
+ }
+
 .course_picture img{
     width: 100%;
     height: auto;
@@ -336,7 +263,6 @@ article.book h2{
 
 button.go_to_course, button.submit_form{
     background-color: lightskyblue;
-    font-family: werdana;
     font-weight: bold;
     font-size: 12px;
     height: 30px;
@@ -396,22 +322,13 @@ button.show_previous_results:hover{
 .fieldset{
     border: none;
 }
-/* 
-.desc{
-    background-color: rgb(241, 21, 241); 
-    border: 1px solid black;
-    border-radius: 8px;
-    text-align: center;
-    width: 40%;
-}
- */
 
 .ques_title{
     color: #fff;
     background-color: lightskyblue;
     font-size: 20px;
     width: 230px;
-    height: 85px;
+    height: 90px;
     padding: 5px 0;
     vertical-align: middle;
     text-align: center;
@@ -428,7 +345,6 @@ div.submit_button{
 
 button.submit_form{
     background-color: lightskyblue;
-    font-family: werdana;
     font-weight: bold;
     font-size: 12px;
     height: 30px;
@@ -444,7 +360,6 @@ button.submit_form{
 
 .show_previous_results{
     background-color: lightskyblue;
-    font-family: werdana;
     font-weight: bold;
     font-size: 12px;
     height: 30px;
@@ -494,7 +409,6 @@ div.form_content > div{
     margin: 20px 10px 10px 20px;
 }
 div.form_content .input_label{
-    font-family: werdana ;
     display:inline-block; 
     width: 110px;
 }
@@ -522,29 +436,7 @@ section.newsletter .newsletter_radio{
 }
 
 
-/* section.newsletter form input{
-    font-family: werdana;
-    font-size: 15px;
-    font-weight: light;
-    max-width: 300px;
-    height: 30px;
-    max-width: 80%;
-    padding-left: 10px;
-    border-radius: 60px 0 0 60px;
-    border: 1px solid lightgray
-} */
-
 section.newsletter form button{
-/*     font-family: werdana;
-    font-size: 15px;
-    font-weight: light;
-    background-color: lightskyblue;
-    width: 500px;
-    height: 30x;
-    max-width: 20%;
-    border-radius: 0 170px 170px 0;
-    border: none;
-    color: black */
     margin: 20px auto;
 }
 
@@ -591,207 +483,3 @@ footer div.rights{
 
 
 
-/*-------------------------------------------------------------
-*************************   MEDIA QUERIES  ***************************
---------------------------------------------------------------*/
-/* Normal desktops*/
-@media screen and (max-width: 1880px)
-{
-    #main_container{
-        /* background-color: coral; */
-        opacity: 80%;
-    }
-
-    #why_aside p{
-        font-family: werdana;
-        font-weight: light;
-        font-size: 16px;
-        text-align: left;
-        letter-spacing: 0.4px;
-        line-height: 20px;
-        margin-left: 10px;
-    } 
-    #hero_text ul{
-        margin-top: 8px;
-     }
-   }
-
-/* Small desktops*/
-@media screen and (max-width: 1140px)
-{
-    #main_container{
-        background-color: skyblue; 
-        opacity: 80%;
-    }
-    #why_aside{       
-        width: 80%;
-        float:inherit;
-        font-style: italic;
-        margin:auto;
-    } 
-    .relative_hero_text{
-        font-size: 28px;
-        line-height: 34px; 
-        margin-top: 10px;
-        margin-left: 5px;
-     }
-}
-
-/*-------------------------------------------------------------
-*************************   TABLETS  ***************************
---------------------------------------------------------------*/  
-@media screen and (max-width: 960px)
-{
-    #main_container{
-        background-color: green; 
-        opacity: 80%;
-    }
-    .relative_hero_text{
-        display: none;
-     }
-     .absolute_hero_text{
-        display:block;
-        background-color: lightskyblue;
-        font-family: werdana; 
-        color: aliceblue;
-        font-size: 20px;
-        font-weight: normal; 
-        line-height: 30px; 
-        margin-top: 10px;
-        margin:auto
-     }
-
-    .nav_menu ul li.main_menu{
-        display: none;
-    }
-
-    .nav_menu ul li.dropdown_menu{
-        display: inline-block;
-        position: relative;
-        margin-right: 40px;
-    }
-    
-    .submenu{
-        display: none;
-        position: absolute;
-        top: 37px;
-        left: -50px;
-        background-color:rgb(188, 185, 185);
-        min-width: 200px;
-        height: 150px;
-        z-index: 1;
-        margin: auto;
-        padding-bottom: 15px;
-    }
-    
-    .dropdown_menu:hover .submenu {
-        display: block;
-    }
-
-    .content li {
-        padding-bottom: 10px;
-    }
-
-    .content li a{
-        font-family: werdana;
-        font-size: 15px;
-    }
-
-
-    .books_aside{       
-        width: 50%;
-        float:inherit;
-        margin:auto;
-    } 
-
-    .book_conteiner{
-        display: block;
-        max-height: 300px; 
-        width: 100%;
-        margin-bottom: 20px;
-        margin-left: 0;
-    }
-    
-    .books{
-        float: left;
-        height: 70%;
-        width: auto;
-    }
-
-    button.go_to_course{
-        height: 50px;}
-
-
-    .questionnary .questionnary_flex{
-        display: block;
-        /* height:330px; */
-    }
-
-
-
-    .questionnary_flex .form{
-        display: block;
-        }
-
-
-}
-
-
-/* Mobiles*/
-@media screen and (max-width: 576px)
-{
-    #main_container{
-        background-color: yellow; 
-        opacity: 80%;
-    }
-
-    .container
-    {
-      /* background-color: rgb(112, 245, 112); */
-      /* max-width: 92%; */
-      /* opacity: 80%; */
-      /* margin:auto; */
-    }
-
-    .book_conteiner{
-        display: block;
-        background-color: rgb(225, 207, 241);
-        max-height: 400px; 
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    
-    .books{
-        float: left;
-        height: 50%;
-        width: auto;
-    }
-    
-    .courses{
-        display: block;
-        /* justify-content: space-between;    */
-    }
-
-    .course{
-        width: 80%;
-    }
-
-    button.go_to_course{
-        height: 30px; 
-    }
-
-    hr{
-        width: 400px;
-    }
-
-
-    div.form_content{   
-        display: block;
-        /* background-color: rgb(129, 129, 242); */
-    }
-
-    div.form_content > div{
-        width: 80%;
-
-}
-}

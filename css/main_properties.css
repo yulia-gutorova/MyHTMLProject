@@ -1,0 +1,66 @@
+/*-------------------------------------------------------------
+*************************   MAIN PROPERTIES  ***************************
+--------------------------------------------------------------*/
+
+body{
+    margin: 0px;
+    padding-top:100px;
+}
+
+#main_container{
+    width: 100%;
+}
+
+*{
+    font-family:verdana, sans-serif;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+} 
+
+ 
+h2{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 10px;
+    line-height: 22px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+} 
+
+h3{
+
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: left;
+    margin-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}   
+
+.article{
+    width: 80%; 
+    margin:60px auto;
+ }
+
+ .article p{
+    font-weight: light;
+    font-size: 17px;
+    text-align: left;
+    line-height: 22px;
+    margin-left: 10px;
+}
+
+hr{
+    border: none;
+    border-top: 5px rgb(95, 241, 95) solid;
+    width: 500px;
+    margin-bottom: 100px;
+}
