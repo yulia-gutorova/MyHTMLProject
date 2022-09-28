@@ -23,7 +23,6 @@ h1{
     padding-bottom: 10px;
 } 
 
- 
 h2{
     font-weight: bold;
     font-size: 20px;
@@ -35,7 +34,6 @@ h2{
 } 
 
 h3{
-
     font-weight: bold;
     font-size: 20px;
     line-height: 22px;
@@ -63,4 +61,10 @@ hr{
     border-top: 5px rgb(95, 241, 95) solid;
     width: 500px;
     margin-bottom: 100px;
+}
+
+button.go_to_course:hover,
+button.submit_form:hover,
+button.show_previous_results:hover{
+    background-color: rgb(19, 161, 249);
 }
